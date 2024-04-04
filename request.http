@@ -1,0 +1,26 @@
+###
+GET http://localhost:3001/api/v1/students HTTP/1.1
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost:3001/api/v1/students HTTP/1.1
+Content-Type: application/json
+
+{
+    "studentId": 4,
+    "name": "Pepito Perez",
+    "identification": "2.222.222.222",
+    "age": 22
+}
+
+###
+PATCH http://localhost:3001/api/v1/students/update/4 HTTP/1.1
+conContent-Type: application/json
+
+{}
+
+###
+DELETE http://localhost:3001/api/v1/students/delete/4 HTTP/1.1
+conContent-Type: application/json
